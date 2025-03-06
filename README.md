@@ -77,22 +77,15 @@ import 'instincthub-css/dist/instincthub.css';
 </div>
 ```
 
-#### Grid System
-```html
-<div class="grid">
-  <div style="grid-column: span 4;">Column 1</div>
-  <div style="grid-column: span 4;">Column 2</div>
-  <div style="grid-column: span 4;">Column 3</div>
-</div>
-```
-
 ### Elements
 
 #### Buttons
 ```html
-<button class="btn">Default Button</button>
-<button class="btn primary">Primary Button</button>
-<button class="btn secondary">Secondary Button</button>
+<button class="default-btn">Default Button</button>
+<button class="primary-btn">Primary Button</button>
+<button class="important-btn">Important Button</button>
+<button class="danger-btn">Danger Button</button>
+<button class="outlined-btn">Outlined Button</button>
 ```
 
 ## Customization
