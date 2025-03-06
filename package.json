@@ -1,7 +1,7 @@
 {
   "name": "instincthub-css",
   "version": "1.0.0",
-  "description": "instinctHub Global CSS Library",
+  "description": "InstinctHub Global CSS Library",
   "main": "dist/instincthub.css",
   "style": "dist/instincthub.css",
   "files": [
@@ -9,7 +9,10 @@
     "README.md"
   ],
   "scripts": {
-    "build": "mkdir -p dist && cp src/instincthub.css dist/instincthub.css",
+    "build": "npm run build:detect",
+    "build:detect": "node -e \"process.platform === 'win32' ? require('child_process').execSync('npm run build:windows') : require('child_process').execSync('npm run build:linux')\"",
+    "build:windows": "if not exist dist mkdir dist && copy /Y src\\instincthub.css dist\\instincthub.css",
+    "build:linux": "mkdir -p dist && cp src/instincthub.css dist/instincthub.css",
     "prepublishOnly": "npm run build"
   },
   "keywords": [
