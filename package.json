@@ -1,6 +1,6 @@
 {
   "name": "instincthub-css",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "InstinctHub Global CSS Library",
   "main": "dist/instincthub.css",
   "style": "dist/instincthub.css",
