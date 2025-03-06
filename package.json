@@ -1,0 +1,31 @@
+{
+  "name": "instincthub-css",
+  "version": "1.0.0",
+  "description": "instinctHub Global CSS Library",
+  "main": "dist/instincthub.css",
+  "style": "dist/instincthub.css",
+  "files": [
+    "dist",
+    "README.md"
+  ],
+  "scripts": {
+    "build": "mkdir -p dist && cp src/instincthub.css dist/instincthub.css",
+    "prepublishOnly": "npm run build"
+  },
+  "keywords": [
+    "css",
+    "instincthub",
+    "styles",
+    "frontend"
+  ],
+  "author": "Noah Olatoye",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/instincthub/instincthub-css.git"
+  },
+  "bugs": {
+    "url": "https://github.com/instincthub/instincthub-css/issues"
+  },
+  "homepage": "https://github.com/instincthub/instincthub-css#readme"
+}
